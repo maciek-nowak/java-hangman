@@ -54,6 +54,7 @@ class LeaderBoard {
         for(int i = 0; i < 10; i++) {
             if (highscore.getTime() < highScores.get(i).getTime()) {
                 highScores.add(i, highscore);
+                highScores.remove(10);
                 break;
             }
         }
