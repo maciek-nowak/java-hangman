@@ -8,9 +8,9 @@
   * boolean **again**
 
 **Methods:**
-  * public static void **main**(String[] args)
+  * public static void **main**(String[] args)  
 Controls main application flow
-  * public static boolean **askUserToPlayAgain**()
+  * public static boolean **askUserToPlayAgain**()  
 Asks user if he wants to play again
 
 ### **`LeaderBoard.java`**
@@ -18,15 +18,14 @@ Asks user if he wants to play again
   * ArrayList<HighScore> **highScores**
 
 **Methods:**
-  * public static void **addHighScore**(HighScore highscore)
+  * public static void **addHighScore**(HighScore highscore)  
 Adds new highscore to the highScores ArrayList
-  * public static void **printHighScore**()
+  * public static void **printHighScore**()  
 Prints Top 10 highscores list
-  * public static void **saveHighScore**()
+  * public static void **saveHighScore**()  
 Saves Top 10 highscores list to the txt file
-  * public static void **readHighScore**()
+  * public static void **readHighScore**()  
 Reads Top 10 highscores list from the txt file
-  * 
 
 ### **`Player.java`**
 **Fields:** 
@@ -34,13 +33,13 @@ Reads Top 10 highscores list from the txt file
   * String **name**
 
 **Methods:**
-  * public boolean **isAlive**()
+  * public boolean **isAlive**()  
 Returns true if player has at least 1 life
-  * public void **decreaseLife**(int damage)
+  * public void **decreaseLife**(int damage)  
 Decreases player's life
-  * public int **getLife**()
+  * public int **getLife**()  
 Returns player's life
-  * public String **getName**()
+  * public String **getName**()  
 Returns player's name
 
 
@@ -58,25 +57,25 @@ Returns player's name
   * static String **WHITE**
 
 **Methods:**
-  * public static void **singleGame**(AsciiArt asciiArt)
+  * public static void **singleGame**(AsciiArt asciiArt)  
 Controls single game flow
-  * public static String **askPlayerName**()
+  * public static String **askPlayerName**()  
 Asks player for his name
-  * public static void **clearScreen**()
+  * public static void **clearScreen**()  
 Clears screen
-  * public String **getUserLetter**()
+  * public String **getUserLetter**()  
 Asks user to guess a letter
-  * public String **getUserWord**()
+  * public String **getUserWord**()  
 Asks user to guess whole word
-  * public void **printGameStatus**()
+  * public void **printGameStatus**()  
 Prints all current game information
-  * public void **handleUserGuess**()
+  * public void **handleUserGuess**()  
 Processes user inputs of guessed letters and words
-  * public void **printStartMessage**()
+  * public void **printStartMessage**()  
 Prints info about game goal
-  * public void **printFinalInfo**()
+  * public void **printFinalInfo**()  
 Prints end game info
-  *  public void **handleHighScore**()
+  *  public void **handleHighScore**()  
 Controls all methods connected to highscore
 
 ### **`Capital.java`**
@@ -88,29 +87,29 @@ Controls all methods connected to highscore
   * HashSet<String> **wrongWords**
 
 **Methods:**
-  * public String **getCapital**()
+  * public String **getCapital**()  
 Returns capital name
-  * public String **getCountry**()
+  * public String **getCountry**()  
 Returns country
-  * public String **getHiddenCapital**()
+  * public String **getHiddenCapital**()  
 Returns hiddenCapital
-  * public String **getHiddenCapitalView**()
+  * public String **getHiddenCapitalView**()  
 Returns representation of hiddenCapital for printing
-  * public String **getWrongLettersView**
+  * public String **getWrongLettersView**  
 Returns representation of unguessed letters set for printing
-  * public String **getWrongWordsView**()
+  * public String **getWrongWordsView**()  
 Returns representation of unguessed words set for printing
-  * public HashSet<String> **getWrongLetters**
+  * public HashSet<String> **getWrongLetters**  
 Returns wrongLetters
-  * public HashSet<String> **getWrongWords**
+  * public HashSet<String> **getWrongWords**  
 Returns wrongwords
-  * public boolean **isGuessed**()
+  * public boolean **isGuessed**()  
 Returns true if all letters of hiddenCapital are uncovered
-  * public boolean **checkLetter**( String letter )
+  * public boolean **checkLetter**( String letter )  
 Checks if letter entered by user is correct
-  * public boolean **checkWord**( String word )
+  * public boolean **checkWord**( String word )  
 Checks if word entered by user is correct
-  * public static ArrayList<Capital> **readCapitalsData**()
+  * public static ArrayList<Capital> **readCapitalsData**()  
 Reads and creates list of Capitals from file
-  * public static Capital **chooseRandomCapital**()
+  * public static Capital **chooseRandomCapital**()  
 Randomly chooses Capital
